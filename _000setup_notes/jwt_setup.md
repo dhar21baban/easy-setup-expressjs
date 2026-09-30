@@ -12,6 +12,14 @@ there are organize ways
 - its primary purpose provides necessary information for jwt 
 
 ```ts
+
+const getPublicKey = (): string => {
+
+}
+const getPrivateKey = (): string => {
+  
+}
+
 export const jwtConfig = {
   publicKey: getPublicKey(), // its return string or read public.pem file content from env then return it
   privateKey: getPrivateKey(), // // its return string or read private.pem file content from env then return it
