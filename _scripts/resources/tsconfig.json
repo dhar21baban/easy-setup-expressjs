@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Target & Environment */
+    "target": "ES2022" /* Modern JavaScript features supported by Node.js */,
+    "module": "CommonJS" /* Standard module system for Node.js backend */,
+    "moduleResolution": "node" /* Resolves imports using Node.js logic */,
+    "lib": ["ES2022"] /* Standard library features available */,
+
+    /* Output & Structure */
+    "rootDir": "./src" /* Source code directory */,
+    "outDir": "./dist" /* Output directory for compiled JS */,
+    "removeComments": true /* Strips comments from compiled output */,
+
+    /* Type Safety & Quality */
+    "strict": true /* Enables all strict type-checking options */,
+    "noImplicitAny": true /* Raises error on expressions with an implied 'any' type */,
+    "strictNullChecks": true /* Prevents null/undefined type bugs */,
+    "noUnusedLocals": true /* Reports errors on unused local variables */,
+    "noUnusedParameters": true /* Reports errors on unused function parameters */,
+
+    /* Interoperability & Imports */
+    "esModuleInterop": true /* Allows default imports from CommonJS modules (e.g. import express from 'express') */,
+    "allowSyntheticDefaultImports": true /* Allows default imports from modules with no default export */,
+    "skipLibCheck": true /* Skips type checking of declaration files (.d.ts) for faster builds */,
+    "forceConsistentCasingInFileNames": true /* Ensures cross-platform file path consistency */,
+
+    /* Path Aliases (Optional, for clean imports) */
+    "baseUrl": "./",
+    "paths": {
+      "@src/*":["src/*"],
+      // ----------
+      "@jobs/*": ["src/jobs/*"],
+      "@dtos/*": ["src/dtos/*"],
+      "@config/*": ["src/config/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@services/*": ["src/services/*"],
+      "@models/*": ["src/models/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@utils/*": ["src/utils/*"],
+      "@schemas/*": ["src/schemas/*"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants/index.ts"]
+    }
+  },
+  "include": ["src/**/*"] /* Files to compile */,
+  "exclude": ["node_modules", "dist"] /* Directories to ignore */
+}
