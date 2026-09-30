@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import helmet from "helmet";
 import cors from 'cors'
 import morgan from 'morgan';
-import rootRouter from "./routes";
+import rootRouter from "./routes/";
 import path from "path";
 
 dotenv.config();

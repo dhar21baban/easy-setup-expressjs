@@ -14,4 +14,5 @@ cp "$PROJECT_ROOT/_scripts/resources/package.json" "$PROJECT_ROOT/package.json"
 
 npm install express
 npm install -D typescript tsx @types/node @types/express
-npm install cors dotenv helmet morgan
+npm install cors dotenv helmet morgan 
+npm install @types/cors @types/morgan
