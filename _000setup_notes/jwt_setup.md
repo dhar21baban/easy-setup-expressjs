@@ -2,7 +2,7 @@
 
 ### install npm package
 ```bash
-npm i jsonwebtoken
+npm i jsonwebtoken @types/jsonwebtoken
 ```
 
 there are organize ways
@@ -64,7 +64,7 @@ export nameSpace JwtUtil{
       throw new Error("Failed to sign JWT token. Please check key formatting or passphrase.");
     }
   };
-}
+
 
 
  /**
